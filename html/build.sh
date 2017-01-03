@@ -1,1 +1,1 @@
-pug -o html/ src/pug/*.pug
+pug -o ./ ../src/pug/*.pug
