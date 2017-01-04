@@ -16,25 +16,27 @@ html(lang="en")
         nav.nav.has-shadow
           //TODO Make these jump to the correct sections
           div.nav-right
-            a.nav-item.is-tab
+            a.nav-item.is-tab#about-link
               | About
-            a.nav-item.is-tab
+            a.nav-item.is-tab#portfolio-link
               | Blag
-            a.nav-item.is-tab
+            a.nav-item.is-tab#contact-link
               | Contact
       //TODO get the size and scaling for this to work nicely
       .hero-body.picture-banner
         .container.has-text-centered
           h2.title.is-2
             | This is my header 
-    section.section
+    section.section#about
       .container.is-fluid
         .heading
           h1.title About
         | yo waddup
-    section.section
+    section.section#portfolio
       .container.is-fluid
-        h1.title Porfolio
+        .heading
+          h1.title Porfolio
+          .clearfix
         //-.box
         .container
           h3.title Project Name
@@ -61,3 +63,4 @@ html(lang="en")
         .heading
           h1.title Contact
         | yo waddup
+    script(src="/js/scripts.js")
