@@ -14,6 +14,7 @@ html(lang="en")
     section.hero.is-bold.is-fullheight
       .hero-header.is-primary
         nav.nav.has-shadow
+          //TODO Make these jump to the correct sections
           div.nav-right
             a.nav-item.is-tab
               | About
@@ -21,24 +22,42 @@ html(lang="en")
               | Blag
             a.nav-item.is-tab
               | Contact
+      //TODO get the size and scaling for this to work nicely
       .hero-body.picture-banner
         .container.has-text-centered
           h2.title.is-2
             | This is my header 
     section.section
-      .container
+      .container.is-fluid
         .heading
           h1.title About
         | yo waddup
     section.section
-      .container
-        .heading
-          h1.title Porfolio
-        | yo waddup
+      .container.is-fluid
+        h1.title Porfolio
+        //-.box
+        .container
+          h3.title Project Name
+          .columns
+            .column.is-one-quarter
+              .image.is-128x128
+                img(src="http://placehold.it/128x128")
+            .column.is-three-quarters
+              .portfolio-content
+                |Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+          //-.box
+          hr
+          h3.title Project Name
+          .columns
+            .column.is-one-quarter
+              .image.is-128x128
+                img(src="http://placehold.it/128x128")
+            .column.is-three-quarters
+              .portfolio-content
+                |Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+          hr
     section.section
-      .container
+      .container.is-fluid
         .heading
           h1.title Contact
         | yo waddup
-    div this it toally some dank test
-    this is some text outside a div
