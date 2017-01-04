@@ -11,15 +11,20 @@ html(lang="en")
     link(rel="stylesheet" href="/styles/bulma.css")
 
   body
-    nav.nav
-      div.nav-right
-        a.nav-item
-          | About
-        a.nav-item
-          | Blag
-        a.nav-item
-          | Contact
-    section.hero.is-bold.picture-banner.is-medium
+    section.hero.is-bold.is-fullheight
+      .hero-header.is-primary
+        nav.nav.has-shadow
+          div.nav-right
+            a.nav-item.is-tab
+              | About
+            a.nav-item.is-tab
+              | Blag
+            a.nav-item.is-tab
+              | Contact
+      .hero-body.picture-banner
+        .container.has-text-centered
+          h2.title.is-2
+            | This is my header 
     section.section
       .container
         .heading
