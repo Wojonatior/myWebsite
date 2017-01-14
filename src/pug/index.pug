@@ -9,35 +9,36 @@ html(lang="en")
 
     link(rel="stylesheet" href="/public/styles/styles.css")
     link(rel="stylesheet" href="/public/styles/bulma.css")
+    link(rel="stylesheet" href="/public/styles/font-awesome.min.css")
 
   body
     section.hero.is-bold.is-fullheight
       .hero-header.is-primary
         nav.nav.has-shadow
-          //TODO Make these jump to the correct sections
           div.nav-right
             a.nav-item.is-tab#about-link
               | About
             a.nav-item.is-tab#portfolio-link
-              | Blag
+              | Portfolio
             a.nav-item.is-tab#contact-link
               | Contact
+            a.nav-item.is-tab#blag-link
+              | Blag
       //TODO get the size and scaling for this to work nicely
       .hero-body.picture-banner
         .container.has-text-centered
-          h2.title.is-2
+          h2.title.is-2.is-primary
             | This is my header 
     section.section#about
       .container.is-fluid
-        .heading
+        .heading.has-text-centered
           h1.title About
         | yo waddup
     section.section#portfolio
       .container.is-fluid
-        .heading
+        .heading.has-text-centered
           h1.title Porfolio
           .clearfix
-        //-.box
         .container
           h3.title Project Name
           .columns
@@ -47,7 +48,6 @@ html(lang="en")
             .column.is-three-quarters
               .portfolio-content
                 |Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-          //-.box
           hr
           h3.title Project Name
           .columns
@@ -59,8 +59,13 @@ html(lang="en")
                 |Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
           hr
     section.section#contact
-      .container.is-fluid
+      .container.is-fluid.has-text-centered
         .heading
           h1.title Contact
-        | yo waddup
+        span.icon
+          i.fa.fa-twitter
+        span.icon
+          i.fa.fa-github
+        span.icon
+          i.fa.fa-mail
     script(src="/public/js/scripts.js")
