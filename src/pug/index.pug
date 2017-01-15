@@ -10,6 +10,7 @@ html(lang="en")
     link(rel="stylesheet" href="/public/styles/styles.css")
     link(rel="stylesheet" href="/public/styles/bulma.css")
     link(rel="stylesheet" href="/public/styles/font-awesome.min.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
 
   body
     section.hero.is-bold.is-fullheight
@@ -27,7 +28,7 @@ html(lang="en")
       //TODO get the size and scaling for this to work nicely
       .hero-body.picture-banner
         .container.has-text-centered
-          h2.title.is-2.is-primary
+          h1.title.is-1.is-primary
             | This is my header 
     section.section#about
       .container.is-fluid
@@ -61,11 +62,14 @@ html(lang="en")
     section.section#contact
       .container.is-fluid.has-text-centered
         .heading
-          h1.title Contact
-        span.icon
-          i.fa.fa-twitter
-        span.icon
-          i.fa.fa-github
-        span.icon
-          i.fa.fa-mail
+          h2.title.is-2 Contact
+        a(href="https://www.twitter.com/wojonatior")
+          span.icon.is-large
+            i.fa.fa-twitter
+        a(href="https://www.github.com/wojonatior")
+          span.icon.is-large
+            i.fa.fa-github
+        a(href="mailto:jarekwojo@gmail.com")
+          span.icon.is-large
+            i.fa.fa-envelope
     script(src="/public/js/scripts.js")
