@@ -13,8 +13,8 @@ html(lang="en")
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
 
   body
-    section.hero.is-bold.is-fullheight
-      .hero-header.is-primary
+    section.hero.is-bold
+      .hero-header
         nav.nav.has-shadow
           div.nav-right
             a.nav-item.is-tab#about-link
@@ -26,15 +26,18 @@ html(lang="en")
             a.nav-item.is-tab#blag-link
               | Blag
       //TODO get the size and scaling for this to work nicely
+    section.hero.is-bold.is-fullheight.is-primary
       .hero-body.picture-banner
         .container.has-text-centered
           h1.title.is-1.is-primary
-            | This is my header 
+            | I'm Jarek Wojciechowski
     section.section#about
       .container.is-fluid
         .heading.has-text-centered
           h1.title About
-        | yo waddup
+        //TODO Finalize this
+        .container
+          | I'm an aspiring software developer. I love spending my time helping organize hackathons and attending them. I have huge passion for music. I love to spend time cooking as well, especially chili. 
     section.section#portfolio
       .container.is-fluid
         .heading.has-text-centered
@@ -63,12 +66,13 @@ html(lang="en")
       .container.is-fluid.has-text-centered
         .heading
           h2.title.is-2 Contact
-        a(href="https://www.twitter.com/wojonatior")
+        a(href="https://twitter.com/wojonatior")
           span.icon.is-large
             i.fa.fa-twitter
-        a(href="https://www.github.com/wojonatior")
+        a(href="https://github.com/wojonatior")
           span.icon.is-large
             i.fa.fa-github
+        //Make the email made by this useful by default
         a(href="mailto:jarekwojo@gmail.com")
           span.icon.is-large
             i.fa.fa-envelope
