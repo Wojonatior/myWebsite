@@ -2,3 +2,7 @@
   background-image: url('../images/banner.jpg');
   background-size: cover;
 }
+
+.portfolio-element .portfolio-thumbnail {
+  display: inline-block;
+}
