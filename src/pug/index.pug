@@ -26,6 +26,7 @@ html(lang="en")
             a.nav-item.is-tab#blag-link
               | Blag
       //TODO get the size and scaling for this to work nicely
+      //TODO fine another solution for the text color besides this is-primary
     section.hero.is-bold.is-fullheight.is-primary
       .hero-body.picture-banner
         .container.has-text-centered
@@ -44,6 +45,14 @@ html(lang="en")
           h1.title Porfolio
           .clearfix
         .container
+          h3.title Connect Four Monte Carlo AI
+          .columns
+            .column.is-one-quarter
+              .image.is-128x128
+                img(src="http://placehold.it/128x128")
+            .column.is-three-quarters
+              .portfolio-content
+                |I wrote an ai that plays Connect Four and it uses Monte Carlo simulations to make it's moves. You can read more about Monte Carlo here. I wrote this in python and it performed decently well in the competition it was in. 
           h3.title Project Name
           .columns
             .column.is-one-quarter
@@ -52,15 +61,9 @@ html(lang="en")
             .column.is-three-quarters
               .portfolio-content
                 |Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-          hr
-          h3.title Project Name
-          .columns
-            .column.is-one-quarter
-              .image.is-128x128
-                img(src="http://placehold.it/128x128")
-            .column.is-three-quarters
-              .portfolio-content
-                |Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              a(href="github.com/Wojonatior/Connect4MonteCarlo")
+                span.icon.is-large
+                  i.fa.fa-github
           hr
     section.section#contact
       .container.is-fluid.has-text-centered
